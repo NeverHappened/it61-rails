@@ -43,9 +43,9 @@
         .modal-inner
           .modal-content
             .header
-              h2 = t(".map")
+              h2.header-modal-title Карта
+              .btn.header-modal-close for="modal-1" = t("modal.close")
             #map
-          .btn.modal-close for="modal-1" = t("modal.close")
         = ff.hidden_field :address, class: "unchangeable-input", required: true
         = ff.hidden_field :latitude, class: "unchangeable-input", required: true
         = ff.hidden_field :longitude, class: "unchangeable-input", required: true

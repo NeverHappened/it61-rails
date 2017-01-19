@@ -5,6 +5,10 @@ $(function () {
     $('.modal-state:checked').prop('checked', false).change();
   });
 
+  $('.modal-fade-screen, .header-modal-close').on('click', function () {
+    $('.modal-state:checked').prop('checked', false).change();
+  });
+
   $('.modal-inner').on('click', function (e) {
     e.stopPropagation();
   });

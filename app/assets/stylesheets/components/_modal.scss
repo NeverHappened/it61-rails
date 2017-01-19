@@ -62,6 +62,7 @@
       width: auto;
       height: 600px;
       margin: 0 auto;
+      max-height: 80%;
     }
   }
 
@@ -73,6 +74,15 @@
   .modal-content {
     max-height: 600px;
     overflow: hidden;
+  }
+
+  .header {
+    &-modal-title {
+      display: inline-block;
+    }
+    &-modal-close {
+      float: right;
+    }
   }
 }
 

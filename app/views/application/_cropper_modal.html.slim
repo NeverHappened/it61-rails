@@ -3,7 +3,8 @@
   .modal-fade-screen
     .modal-inner
       .modal-content
-        .header
+        h2.header-modal-title Карта
+        .btn.header-modal-close for="modal-1" = t("modal.close")
           h2 Выбрать миниатюру
         img#croppedModalImage src=picture
       button.btn.modal-close#uploadImage type="nosubmit" for="croppedModal" = t("save")

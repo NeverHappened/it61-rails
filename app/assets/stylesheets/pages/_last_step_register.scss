@@ -133,10 +133,11 @@
       @include media($register-mobile) {
         @include span-columns(12);
 
-        button {
+        button, a {
           @include margin(15px null null 0);
           float: inherit;
           width: 100%;
+          text-align: center;
         }
       }
     }
